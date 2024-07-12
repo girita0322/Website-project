@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Adventure Game</title>
+</head>
+<body>
+    <div id="game-container">
+        <h1>Text Adventure Game</h1>
+        <div id="scene-description">
+            <!-- Scene description will be displayed here -->
+            Welcome to the world of adventure!
+        </div>
+        <div id="options">
+            <!-- Player options will be displayed here -->
+            <button onclick="chooseOption(1)">Option 1</button>
+            <button onclick="chooseOption(2)">Option 2</button>
+        </div>
+        <div id="player-status">
+            <!-- Player status will be displayed here -->
+            Health: 100 / Gold: 0
+        </div>
+    </div>
+
+    <script>
+        let health = 100;
+        let gold = 0;
+
+        function updatePlayerStatus() {
+            document.getElementById('player-status').innerText = `Health: ${health} / Gold: ${gold}`;
+        }
+
+        function chooseOption(option) {
+            switch(option) {
+                case 1:
+                    // Handle option 1
+                    break;
+                case 2:
+                    // Handle option 2
+                    break;
+                default:
+                    // Handle default case
+            }
+        }
+
+        // Initial setup
+        updatePlayerStatus();
+    </script>
+</body>
+</html>

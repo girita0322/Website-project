@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect to Login</title>
+    <style>
+        body {
+            background-image: url('index.jpg'); /* 更改为你想要的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #content {
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>簡単なゲームようこそ！</h1>
+        <p>ログインページ移動中...</p>
+    </div>
+
+    <script>
+        // Redirect to login page after 3 seconds
+        setTimeout(function() {
+            window.location.href = "login.php";
+        }, 3000); // 3000 milliseconds = 3 seconds
+    </script>
+</body>
+</html>
